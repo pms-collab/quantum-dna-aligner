@@ -8,7 +8,7 @@ We target the **seeding** stage of seed-and-extend alignment. Extension (Smith-W
 
 ## Claims & Non-Claims
 - **Claim:** For a database of N k-mers with M true matches, our quantum subroutine achieves O(sqrt(N/M)) oracle queries(query-complexity) vs. O(N/M) for naive classical search, demonstrated on small synthetic datasets.
-- **Non-Claims:** End-to-end wall-clock advantage on practical hardware; cost of oracle construction; superiority over optimized FM-index/hashtable pipelines.
+- **Non-Claims:** End-to-end wall-clock advantage on practical hardware; cost of oracle construction; superiority over optimized FM-index/hashtable pipelines. This POC does not compare against FM-index/FM-search or minimap2-class pipelines; only naive/hash baselines are reported.
 
 ## Methods
 - **Baselines:** BL0 linear scan; BL1 simple hash lookup.
@@ -22,6 +22,7 @@ We target the **seeding** stage of seed-and-extend alignment. Extension (Smith-W
 - [ ] Quantum Grover seeding (`quantum/grover_seed.py`, `quantum/oracle.py`)
 - [ ] Evaluation & plots (`eval/compare.py`, `eval/plots.py`)
 - [ ] Short write-up
+
 ⚠️ This repository is a proof-of-concept / work-in-progress. Not intended as a production-ready aligner.
 
 ## Reproduction
