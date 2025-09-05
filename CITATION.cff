@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it as below."
+authors:
+  - family-names: Park
+    given-names: Minseok
+title: "Quantum DNA Aligner: Proof-of-concept quantum-inspired seeding algorithm"
+version: "0.1.0"
+date-released: 2025-09-05
+repository-code: "https://github.com/pms-collab/quantum-dna-aligner"
+license: MIT
