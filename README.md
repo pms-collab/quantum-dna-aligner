@@ -7,7 +7,7 @@ Proof-of-concept quantum-inspired seeding algorithm for DNA alignment.
 We target the **seeding** stage of seed-and-extend alignment. Extension (Smith-Waterman / Needleman-Wunsch) is out of scope for quantum speedups in this POC.
 
 ## Claims & Non-Claims
-- **Claim:** For a database of N k-mers with M true matches, our quantum subroutine achieves O(√(N/M)) oracle queries vs. O(N/M) for naive classical search, demonstrated on small synthetic datasets.
+- **Claim:** For a database of N k-mers with M true matches, our quantum subroutine achieves O(sqrt(N/M)) oracle queries(query-complexity) vs. O(N/M) for naive classical search, demonstrated on small synthetic datasets.
 - **Non-Claims:** End-to-end wall-clock advantage on practical hardware; cost of oracle construction; superiority over optimized FM-index/hashtable pipelines.
 
 ## Methods
@@ -16,6 +16,12 @@ We target the **seeding** stage of seed-and-extend alignment. Extension (Smith-W
 - **Metrics:** oracle queries, circuit depth, hit probability, seed hit rate, reference wall-clock.
 - **Data:** synthetic reads and k-mer tables (scripts in `data/`).
 
+## Roadmap
+- [ ] Synthetic data generator (`data/make_synth.py`)
+- [ ] Classical baselines (`classical/linear_seed.py`, `classical/hash_seed.py`)
+- [ ] Quantum Grover seeding (`quantum/grover_seed.py`, `quantum/oracle.py`)
+- [ ] Evaluation & plots (`eval/compare.py`, `eval/plots.py`)
+- [ ] Short write-up
 ⚠️ This repository is a proof-of-concept / work-in-progress. Not intended as a production-ready aligner.
 
 ## Reproduction
