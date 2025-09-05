@@ -1,0 +1,17 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environment
+.venv/
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+
+# IDE settings
+.vscode/
+.idea/
+
+# Logs and runs
+runs/
+*.log
