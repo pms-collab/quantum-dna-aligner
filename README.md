@@ -26,3 +26,5 @@ python classical/linear_seed.py --query q.fa --db db_kmers.txt
 python classical/hash_seed.py   --query q.fa --db db_kmers.txt
 python quantum/grover_seed.py  --query q.fa --db db_kmers.txt --shots 2048
 python eval/compare.py --runs runs/
+python -m venv .venv && source .venv/bin/activate  # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
