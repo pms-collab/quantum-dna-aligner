@@ -34,6 +34,7 @@ python classical/linear_seed.py --query q.fa --db db_kmers.txt
 python classical/hash_seed.py   --query q.fa --db db_kmers.txt
 python quantum/grover_seed.py  --query q.fa --db db_kmers.txt --shots 2048
 python eval/compare.py --runs runs/
+```
 
 ## License
 Licensed under the MIT License – see [LICENSE](./LICENSE).
