@@ -27,11 +27,12 @@ We target the **seeding** stage of seed-and-extend alignment. Extension (Smith-W
 
 ## Reproduction
 ```bash
+python -m venv .venv && source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 python data/make_synth.py --n_kmers 1024 --k 15
 python classical/linear_seed.py --query q.fa --db db_kmers.txt
 python classical/hash_seed.py   --query q.fa --db db_kmers.txt
 python quantum/grover_seed.py  --query q.fa --db db_kmers.txt --shots 2048
 python eval/compare.py --runs runs/
-python -m venv .venv && source .venv/bin/activate  # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
+
+Licensed under the MIT License – see [LICENSE](./LICENSE).
