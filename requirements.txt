@@ -1,1 +1,1 @@
-
+qiskit, numpy, pandas, matplotlib, biopython
